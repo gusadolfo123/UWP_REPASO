@@ -1,0 +1,104 @@
+﻿<Page
+    x:Class="UWP_REPASO.App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_REPASO.App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="#FF2B2B2B"
+    mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel Background="DarkGray" 
+                    CornerRadius="40"
+                    VerticalAlignment="Stretch" 
+                    HorizontalAlignment="Stretch"
+                    CanBeScrollAnchor="True"
+                    Height="Auto">
+            <Grid x:Name="AppTitleBar" 
+                  Background="SeaGreen" 
+                  CornerRadius="20, 20, 0, 0"
+                  Padding="20 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="LeftPaddingColumn" Width="0"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition x:Name="RightPaddingColumn" Width="0"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Custom Title Bar"
+                           Grid.Column="1" 
+                           FontSize="12"
+                           FontWeight="Bold"
+                           Style="{StaticResource CaptionTextBlockStyle}" 
+                           Margin="5,0,0,0"/>
+            </Grid>
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackPanel Background="Bisque">
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                    <TextBlock Text="Inicio" 
+                               FontSize="20"
+                               Padding="40, 20, 20, 20" />
+                </StackPanel>
+      
+                <Rectangle x:Name="Second" 
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           Fill="#FFD11A1A" 
+                           VerticalAlignment="Stretch" 
+                           HorizontalAlignment="Stretch" />            
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+    
+    
+</Page>
