@@ -149,6 +149,9 @@
     <Compile Include="Practices\CommonControls.xaml.cs">
       <DependentUpon>CommonControls.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Practices\CommonControls_2.xaml.cs">
+      <DependentUpon>CommonControls_2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Practices\NavHamburger.xaml.cs">
       <DependentUpon>NavHamburger.xaml</DependentUpon>
     </Compile>
@@ -228,6 +231,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Practices\CommonControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Practices\CommonControls_2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
