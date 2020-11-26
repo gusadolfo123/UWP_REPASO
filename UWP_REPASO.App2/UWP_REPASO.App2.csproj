@@ -143,6 +143,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Practices\CanvasPage.xaml.cs">
+      <DependentUpon>CanvasPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Practices\CommonControls.xaml.cs">
       <DependentUpon>CommonControls.xaml</DependentUpon>
     </Compile>
@@ -219,6 +222,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Practices\CanvasPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Practices\CommonControls.xaml">
       <SubType>Designer</SubType>
