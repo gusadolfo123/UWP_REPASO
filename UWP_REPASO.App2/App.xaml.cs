@@ -9,6 +9,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -81,8 +82,12 @@ namespace UWP_REPASO.App2
                     // Cuando no se restaura la pila de navegación, navegar a la primera página,
                     // configurando la nueva página pasándole la información requerida como
                     //parámetro de navegación
-                    rootFrame.Navigate(typeof(CanvasPage), e.Arguments);
+                    rootFrame.Navigate(typeof(NavHamburger), e.Arguments);
                 }
+
+                ApplicationView.PreferredLaunchViewSize = new Size(450, 800);
+                ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+
                 // Asegurarse de que la ventana actual está activa.
                 Window.Current.Activate();
             }

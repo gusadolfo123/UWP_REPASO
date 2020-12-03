@@ -16,7 +16,8 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Text="Practica Canvas" TextAlignment="Center" Margin="0,10,0,10"></TextBlock>
-        <RelativePanel Grid.Row="1">
+        <RelativePanel Grid.Row="1"
+                       Padding="20,10,20,10">
             <!--<Line X1="10" Y1="20" X2="200" Y2="200"
                   Stroke="DarkCyan" 
                   StrokeThickness="5"
@@ -30,8 +31,19 @@
                       StrokeLineJoin="Round"
                       StrokeEndLineCap="Round"
                       StrokeStartLineCap="Round" />-->
-            <Canvas>
-                <!--<Rectangle Fill="LightGray" 
+            
+            <TextBox Text="Prueba"
+                     Width="100"
+                     Background="LightGray"
+                     BorderBrush="LightGray"
+                     UseSystemFocusVisuals="True"
+                     AllowFocusOnInteraction="True"
+                     FocusVisualPrimaryBrush="red"
+                     FocusVisualSecondaryBrush="YellowGreen"
+                     CornerRadius="5"
+                    />
+            <!--<Canvas>
+                --><!--<Rectangle Fill="LightGray" 
                            Height="30" 
                            Width="100" 
                            Canvas.ZIndex="0"
@@ -39,13 +51,13 @@
                            RadiusX="5"
                            RadiusY="5"
                            ></Rectangle>-->
-                <TextBox Text="Prueba" 
+                <!--<TextBox Text="Prueba" 
                           Canvas.ZIndex="1" 
                           Height="30" 
                           Width="100" 
                           CornerRadius="5"
-                          UseLayoutRounding="True" />
-            </Canvas>
+                          UseLayoutRounding="True" />--><!--
+            </Canvas>-->
         </RelativePanel>
     </Grid>
 

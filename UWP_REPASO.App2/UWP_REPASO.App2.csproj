@@ -152,6 +152,9 @@
     <Compile Include="Practices\CommonControls_2.xaml.cs">
       <DependentUpon>CommonControls_2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Practices\CustomStylesPage.xaml.cs">
+      <DependentUpon>CustomStylesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Practices\NavHamburger.xaml.cs">
       <DependentUpon>NavHamburger.xaml</DependentUpon>
     </Compile>
@@ -222,6 +225,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CustomResources\CommonStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -235,6 +242,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Practices\CommonControls_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Practices\CustomStylesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
