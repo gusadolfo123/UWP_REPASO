@@ -149,6 +149,9 @@
     <Compile Include="Challenges\Stupendous\DonutPage.xaml.cs">
       <DependentUpon>DonutPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Challenges\Stupendous\MainPageStupend.xaml.cs">
+      <DependentUpon>MainPageStupend.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Challenges\Stupendous\SchedulePage.xaml.cs">
       <DependentUpon>SchedulePage.xaml</DependentUpon>
     </Compile>
@@ -258,6 +261,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Challenges\Stupendous\DonutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Challenges\Stupendous\MainPageStupend.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

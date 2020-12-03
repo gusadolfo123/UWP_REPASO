@@ -1,0 +1,125 @@
+﻿<Page
+    x:Class="UWP_REPASO.App2.Challenges.Stupendous.MainPageStupend"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_REPASO.App2.Challenges.Stupendous"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Background="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" 
+                    BorderBrush="White" 
+                    BorderThickness="1" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch">
+                <Button Padding="30" Margin="0"
+                        Name="DonutBtn"
+                        Click="DonutBtn_Click"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch">
+                            <Image Source="/Assets/Stupendous/donut-icon.png" Width="30" Height="30" Margin="0,0,10,0" />
+                            <TextBlock Text="Donuts" Foreground="White" VerticalAlignment="Center" FontSize="20" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </Border>
+
+            <Border Grid.Column="1" 
+                    BorderBrush="White" 
+                    BorderThickness="1" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch">
+                <Button Padding="30" Margin="0"
+                        Name="CoffeeBtn"
+                        Click="CoffeeBtn_Click"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch">
+                            <Image Source="/Assets/Stupendous/coffee-icon.png" Width="30" Height="30" Margin="0,0,10,0" />
+                            <TextBlock Text="Coffee" Foreground="White" VerticalAlignment="Center" FontSize="20" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </Border>
+
+            <Border Grid.Column="2" 
+                    BorderBrush="White" 
+                    BorderThickness="1" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch">
+                <Button Padding="30" Margin="0"
+                        Name="ScheduleBtn"
+                        Click="ScheduleBtn_Click"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch">
+                            <Image Source="/Assets/Stupendous/schedule-icon.png" Width="30" Height="30" Margin="0,0,10,0" />
+                            <TextBlock Text="Schedule" Foreground="White" VerticalAlignment="Center" FontSize="20" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </Border>
+
+            <Border Grid.Column="3" 
+                    BorderBrush="White" 
+                    BorderThickness="1" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch">
+                <Button Padding="30" Margin="0"
+                        HorizontalAlignment="Stretch"
+                        Name="CompleteBtn"
+                        Click="CompleteBtn_Click"
+                        VerticalAlignment="Stretch">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch">
+                            <Image Source="/Assets/Stupendous/schedule-icon.png" Width="30" Height="30" Margin="0,0,10,0" />
+                            <TextBlock Text="Complete" Foreground="White" VerticalAlignment="Center" FontSize="20" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </Border>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            
+            <Frame x:Name="mainFrame" />
+
+            <Canvas Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Image Source="/Assets/Stupendous/background.jpg" Stretch="UniformToFill"  />
+            </Canvas>
+
+        </Grid>
+    </Grid>
+</Page>

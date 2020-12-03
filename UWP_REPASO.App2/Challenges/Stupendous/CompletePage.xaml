@@ -8,7 +8,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <StackPanel>
+        <Image Source="/Assets/Stupendous/color-logo.png" Width="300" Height="300" HorizontalAlignment="Left" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <Image Grid.Row="1" Grid.Column="1" Source="/Assets/Stupendous/ticket.jpg" Width="350" HorizontalAlignment="Center" />
+            <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Order" FontSize="50" />
+                <TextBlock Text="96" FontSize="50" TextAlignment="Center" />
+            </StackPanel>
+
+        </Grid>
+    </StackPanel>
 </Page>

@@ -22,9 +22,41 @@ namespace UWP_REPASO.App2.Challenges.Stupendous
     /// </summary>
     public sealed partial class CoffeePage : Page
     {
+        private List<string> Items = new List<string>();
+
         public CoffeePage()
         {
             this.InitializeComponent();
+        }
+
+        private void RoastButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (RoastButton.IsChecked.Value)
+                Items.Add("Roas");
+            else
+                Items.Remove("Roas");
+
+            CoffeeText.Text = string.Join(",", Items);
+        }
+
+        private void SweetenerButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (SweetenerButton.IsChecked.Value)
+                Items.Add("Sweetener");
+            else
+                Items.Remove("Sweetener");
+
+            CoffeeText.Text = string.Join(",", Items);
+        }
+
+        private void CreamButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (CreamButton.IsChecked.Value)
+                Items.Add("Cream");
+            else
+                Items.Remove("Cream");
+
+            CoffeeText.Text = string.Join(",", Items);
         }
     }
 }

@@ -8,7 +8,23 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <StackPanel Background="Green">
+        <Image Source="/Assets/Stupendous/white-logo.png" Width="300" Height="300" HorizontalAlignment="Left" />
+        <Grid Padding="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <TextBlock Text="Pickup: " FontSize="30" Foreground="WhiteSmoke" Margin="0,0,40,0" />
+            <CalendarDatePicker Grid.Column="1" FontSize="20"></CalendarDatePicker>
+
+            <TimePicker Grid.Column="1" Grid.Row="1" FontSize="20"></TimePicker>
+
+        </Grid>
+    </StackPanel>
 </Page>
