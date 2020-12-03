@@ -140,6 +140,18 @@
     <Compile Include="Challenges\Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Challenges\Stupendous\CoffeePage.xaml.cs">
+      <DependentUpon>CoffeePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Challenges\Stupendous\CompletePage.xaml.cs">
+      <DependentUpon>CompletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Challenges\Stupendous\DonutPage.xaml.cs">
+      <DependentUpon>DonutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Challenges\Stupendous\SchedulePage.xaml.cs">
+      <DependentUpon>SchedulePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -183,6 +195,18 @@
   <ItemGroup>
     <Content Include="Assets\Financial.png" />
     <Content Include="Assets\Food.png" />
+    <Content Include="Assets\Stupendous\background.jpg" />
+    <Content Include="Assets\Stupendous\coffee-icon.png" />
+    <Content Include="Assets\Stupendous\color-logo.png" />
+    <Content Include="Assets\Stupendous\complete-icon.png" />
+    <Content Include="Assets\Stupendous\donut-icon.png" />
+    <Content Include="Assets\Stupendous\schedule-icon.png" />
+    <Content Include="Assets\Stupendous\ticket.jpg" />
+    <Content Include="Assets\Stupendous\UWP-031-A.png" />
+    <Content Include="Assets\Stupendous\UWP-031-B.png" />
+    <Content Include="Assets\Stupendous\UWP-031-C.png" />
+    <Content Include="Assets\Stupendous\UWP-031-D.png" />
+    <Content Include="Assets\Stupendous\white-logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -222,6 +246,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Challenges\Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Challenges\Stupendous\CoffeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Challenges\Stupendous\CompletePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Challenges\Stupendous\DonutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Challenges\Stupendous\SchedulePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -279,6 +319,7 @@
       <Version>6.2.10</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
