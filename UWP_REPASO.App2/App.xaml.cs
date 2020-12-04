@@ -83,7 +83,7 @@ namespace UWP_REPASO.App2
                     // Cuando no se restaura la pila de navegación, navegar a la primera página,
                     // configurando la nueva página pasándole la información requerida como
                     //parámetro de navegación
-                    rootFrame.Navigate(typeof(MainPageStupend), e.Arguments);
+                    rootFrame.Navigate(typeof(BindingDataPage), e.Arguments);
                 }
 
                 ApplicationView.PreferredLaunchViewSize = new Size(450, 800);
