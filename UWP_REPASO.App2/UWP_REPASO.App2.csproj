@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Challenges\AdeptlyAdaptive\MainAdeptlyAdaptivePage.xaml.cs">
+      <DependentUpon>MainAdeptlyAdaptivePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Practices\BookManager.cs" />
     <Compile Include="Challenges\Challenge_1.xaml.cs">
       <DependentUpon>Challenge_1.xaml</DependentUpon>
@@ -214,6 +217,16 @@
     <Content Include="Assets\7.png" />
     <Content Include="Assets\8.png" />
     <Content Include="Assets\9.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Financial1.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Financial2.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Financial3.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Financial4.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Financial5.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Food1.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Food2.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Food3.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Food4.png" />
+    <Content Include="Assets\AdeptlyAdaptive\Food5.png" />
     <Content Include="Assets\Financial.png" />
     <Content Include="Assets\Food.png" />
     <Content Include="Assets\Stupendous\background.jpg" />
@@ -242,6 +255,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Challenges\AdeptlyAdaptive\MainAdeptlyAdaptivePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Challenges\Challenge_1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UWP_REPASO.App2.Challenges;
+using UWP_REPASO.App2.Challenges.AdeptlyAdaptive;
 using UWP_REPASO.App2.Challenges.Stupendous;
 using UWP_REPASO.App2.Practices;
 using Windows.ApplicationModel;
@@ -83,11 +84,11 @@ namespace UWP_REPASO.App2
                     // Cuando no se restaura la pila de navegación, navegar a la primera página,
                     // configurando la nueva página pasándole la información requerida como
                     //parámetro de navegación
-                    rootFrame.Navigate(typeof(BindingDataPage), e.Arguments);
+                    rootFrame.Navigate(typeof(MainAdeptlyAdaptivePage), e.Arguments);
                 }
 
-                ApplicationView.PreferredLaunchViewSize = new Size(450, 800);
-                ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+                //ApplicationView.PreferredLaunchViewSize = new Size(450, 800);
+                //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
                 // Asegurarse de que la ventana actual está activa.
                 Window.Current.Activate();
