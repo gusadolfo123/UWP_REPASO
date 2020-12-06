@@ -119,9 +119,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Challenges\AdeptlyAdaptive\FinantialPage.xaml.cs">
+      <DependentUpon>FinantialPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Challenges\AdeptlyAdaptive\FoodPage.xaml.cs">
+      <DependentUpon>FoodPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Challenges\AdeptlyAdaptive\MainAdeptlyAdaptivePage.xaml.cs">
       <DependentUpon>MainAdeptlyAdaptivePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Challenges\AdeptlyAdaptive\MockMasterViewModel.cs" />
+    <Compile Include="Challenges\AdeptlyAdaptive\Models\Notice.cs" />
     <Compile Include="Practices\BookManager.cs" />
     <Compile Include="Challenges\Challenge_1.xaml.cs">
       <DependentUpon>Challenge_1.xaml</DependentUpon>
@@ -255,6 +263,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Challenges\AdeptlyAdaptive\FinantialPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Challenges\AdeptlyAdaptive\FoodPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Challenges\AdeptlyAdaptive\MainAdeptlyAdaptivePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

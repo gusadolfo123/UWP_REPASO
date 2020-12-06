@@ -87,9 +87,6 @@ namespace UWP_REPASO.App2
                     rootFrame.Navigate(typeof(MainAdeptlyAdaptivePage), e.Arguments);
                 }
 
-                //ApplicationView.PreferredLaunchViewSize = new Size(450, 800);
-                //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
-
                 // Asegurarse de que la ventana actual está activa.
                 Window.Current.Activate();
             }

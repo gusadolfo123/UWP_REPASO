@@ -14,7 +14,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <RelativePanel>
+        <RelativePanel VerticalAlignment="Center">
             <Button Name="BtnShowMenu"
                     Click="BtnShowMenu_Click"
                     Content="&#xE700;" 
@@ -28,14 +28,14 @@
                        RelativePanel.RightOf="BtnShowMenu" />
 
             <StackPanel Orientation="Horizontal"
-                        Padding="10"
+                        Padding="5"
                         RelativePanel.AlignRightWithPanel="True">
                 <TextBox Name="TxtSearch" 
                          Width="200"
                          PlaceholderText="Search"
                          BorderBrush="Gray"
                          BorderThickness="1,1,0,1"
-                         FontSize="26" />
+                         FontSize="18" />
                 <Button Name="BtnSearch"
                         FontFamily="Segoe MDL2 Assets"
                         Content="&#xE1A3;"
@@ -50,20 +50,20 @@
                    Grid.Row="1"
                    DisplayMode="CompactOverlay"
                    FontSize="36"
-                   OpenPaneLength="300"
-                   CompactPaneLength="76">
+                   OpenPaneLength="230"
+                   CompactPaneLength="56">
             <SplitView.Pane>
                 <ListBox>
-                    <ListBoxItem>
+                    <ListBoxItem Name="FinantialItem" Tapped="FinantialItem_Tapped">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE80F;" FontSize="56" Margin="0, 0, 6, 0" />
-                            <TextBlock Text="Financial" FontSize="46" Margin="20, 0, 0, 0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE80F;" FontSize="36" Margin="0, 0, 6, 0" />
+                            <TextBlock Text="Financial" FontSize="26" Margin="20, 0, 0, 0" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE1CE;" FontSize="56" Margin="0, 0, 6, 0" />
-                            <TextBlock Text="Food" FontSize="46" Margin="20, 0, 0, 0" />
+                        <StackPanel Orientation="Horizontal" Name="FoodItem" Tapped="FoodItem_Tapped">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE1CE;" FontSize="36" Margin="0, 0, 6, 0" />
+                            <TextBlock Text="Food" FontSize="26" Margin="20, 0, 0, 0" />
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

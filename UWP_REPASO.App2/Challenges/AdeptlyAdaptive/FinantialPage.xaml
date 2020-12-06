@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="UWP_REPASO.App2.Challenges.AdeptlyAdaptive.FinantialPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_REPASO.App2.Challenges.AdeptlyAdaptive"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:UWP_REPASO.App2.Challenges.AdeptlyAdaptive.Models"
+    mc:Ignorable="d"    
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <DataTemplate x:Key="GridDataTemplate" x:DataType="data:Notice">                 
+            <Grid Name="MainGrid" Background="WhiteSmoke">                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Name="PanelImage" Width="400">                    
+                    <Image Source="{x:Bind ImageSource}" Stretch="Fill" />
+                </StackPanel>
+                <TextBlock Name="Title" Grid.Row="1" FontSize="36" Text="{x:Bind Title}" Padding="10,10,10,0" />
+                <TextBlock Grid.Row="2" FontSize="20" Text="{x:Bind Description}" Padding="10,0,10,0" />
+                <TextBlock Grid.Row="3" Text="{x:Bind SubTitle}" Padding="10" />              
+            </Grid>            
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="Gainsboro" Padding="20">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="VisualState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainGrid.Background" Value="Red" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState1">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainGrid.Background" Value="Blue" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState2">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainGrid.Background" Value="Green" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <GridView ItemsSource="{x:Bind Notices}" 
+                  ItemTemplate="{StaticResource GridDataTemplate}"
+                  IsItemClickEnabled="True" />
+    </Grid>
+</Page>
